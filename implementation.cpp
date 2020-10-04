@@ -16,7 +16,6 @@ int main() {
 	// Create two links, each with a mass of 1 kg, center of mass at the body's
 	// origin, and moments and products of inertia of zero.
 	OpenSim::Body* patella = new OpenSim::Body("patella", 1, Vec3(0), Inertia(0));
-	OpenSim::Body* radius = new OpenSim::Body("radius", 1, Vec3(0), Inertia(0));
 
 	// Connect the bodies with pin joints. Assume each body is 1 m long.
 	CustomJoint* Patella = new CustomJoint("patella",
